@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="main-div">
+        <div class="error-div stop-showing">
+            <button class="close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="error-content">
+                <img src="wrong.png" class="wrong">
+                <p class="error">Invalid Input</p>
+            </div>
+        </div>
+        <h2>Get Your Weather info Here....</h2>
+        <div class="container">
+            <div class="search-area">
+                <input type="text" placeholder="Enter Location Here." spellcheck="false">
+                <button class="search-place"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="w-icon hide">
+                <img class="weather-img">
+            </div>
+            <div class="city-temp hide">
+                <p class="city">City Name</p>
+                <p class="temp"></p>
+            </div>
+            <div class="min-max-humid-wind hide">
+                <div class="minTemp-humid">
+                    <div class="min-temp">
+                        <p class="head">Min. Temp</p>
+                        <p class="min"></p>
+                    </div>
+                    <div class="humidity">
+                        <div class="humi-img">
+                            <img class="h" src="humidity.png">
+                        </div>
+                        <div class="humi-weather">
+                            <p class="head">Humidity</p>
+                            <p class="humi"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="maxTemp-wind">
+                    <div class="max-temp">
+                        <p class="head">Max. Temp</p>
+                        <p class="max"> </p>
+                    </div>
+                    <div class="Wind">
+                        <div class="wind-img humi-img">
+                            <img class="w" src="wind.png">
+                        </div>
+                        <div class="wind-weather">
+                            <p class="head">Wind Speed</p>
+                            <p class="wind"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reset-btn">Clear</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
